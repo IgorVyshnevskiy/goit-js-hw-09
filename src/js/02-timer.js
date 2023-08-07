@@ -24,7 +24,7 @@ const options = {
     if (selectedDates[0].getTime() < Date.now()) {
       return Notiflix.Notify.failure('Please choose a date in the future');
     } else {
-      Notiflix.Notify.success('The selected date is valid!');
+      Notiflix.Notify.success('✅ The selected date is valid!');
       selectedDate = selectedDates[0].getTime();
       return (refs.btn.disabled = false);
     }
